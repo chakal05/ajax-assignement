@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="index.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="margin-y">
+				<p class="title fontBold centerText">QUOTES GARDEN</p>
+				<p class=" hide loading centerText">Loading...</p>
+			</div>
+
+			<div class="margin-t">
+				<div class="margin-y">
+					<ul class="grid-3">
+						<li class="centerText">
+							<button
+								onclick="getQuotes()"
+								class="margin-3 padding-5 bg-white rounded shadow on-hover"
+							>
+								QUOTES
+							</button>
+						</li>
+						<li class="centerText">
+							<button
+								onclick="getAuthors()"
+								class="margin-3 rounded bg-white padding-5 shadow on-hover"
+							>
+								AUTHORS
+							</button>
+						</li>
+						<li class="centerText">
+							<button
+								onclick="getGenres()"
+								class="margin-3 padding-5 bg-white rounded shadow on-hover"
+							>
+								GENRES
+							</button>
+						</li>
+					</ul>
+				</div>
+
+				<div class="mt-12">
+					<p class="title fontBold centerText resultText"></p>
+					<br />
+					<ul class="grid-4 result"></ul>
+				</div>
+				<p class="errorHandler"></p>
+			</div>
+		</div>
+		<script src="./index.js"></script>
+	</body>
+</html>
