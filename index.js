@@ -45,6 +45,7 @@ const populateList = async (category, query) => {
 
 			// If item does not contain a quoteText property, uses item
 			li.textContent = item.quoteText || item.toUpperCase();
+
 			results.appendChild(li);
 
 			// Remove 'loading...'
